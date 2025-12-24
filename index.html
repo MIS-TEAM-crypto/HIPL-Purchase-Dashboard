@@ -315,9 +315,7 @@
       <div id="home" class="content">
         <div class="page-header">
           <h1>Hipl Purchase Dashboard</h1>
-          <p>
-            Select a module to continue. 
-          </p>
+          <p>Select a module to continue.</p>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <div class="col">
@@ -412,6 +410,17 @@
               </div>
             </a>
           </div>
+          <div class="col">
+            <div
+              class="animated-card h-100"
+              onclick="showContent('electric-dashboard-page')"
+            >
+              <div class="card-content">
+                <i class="bi bi-lightning-charge-fill icon-2 card-icon icon-1"></i>
+                <h5 class="card-title">Electric Dashboard</h5>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -466,34 +475,6 @@
                 <div class="card-content">
                   <i class="bi bi-person-badge-fill card-icon icon-3"></i>
                   <h5 class="card-title">Add Doer</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Electric Dashboard Sub-Menu Page -->
-      <div id="electric-dashboard-page" class="content">
-        <div class="page-header">
-          <button class="btn back-btn" onclick="goBack()">
-            <i class="bi bi-arrow-left me-2"></i> Back
-          </button>
-          <h1>Electric Dashboard</h1>
-          <p>Select a dashboard to view.</p>
-        </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
-          <div class="col">
-            <a
-              href="https://lookerstudio.google.com/embed/reporting/45d67aa9-1f8c-49d5-87d4-311e72e0e5fc/page/qlD"
-              target="_blank"
-              rel="noopener noreferrer"
-              style="text-decoration: none"
-            >
-              <div class="animated-card h-100">
-                <div class="card-content">
-                  <i class="bi bi-ev-station-fill card-icon icon-1"></i>
-                  <h5 class="card-title">Electric & Solar Dashboard</h5>
                 </div>
               </div>
             </a>
@@ -774,6 +755,64 @@
           </div>
         </div>
       </div>
+
+
+
+
+      </div> <!-- end of home -->
+
+<!-- Electric Dashboard Page -->
+</div> <!-- end of home -->
+
+<!-- Electric Dashboard Page -->
+<div id="electric-dashboard-page" class="content">
+  <div class="page-header">
+    <button class="btn back-btn" onclick="goBack()">
+      <i class="bi bi-arrow-left me-2"></i> Back
+    </button>
+    <h1>Electric Dashboard</h1>
+    <p>Select a dashboard or form.</p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+
+    <!-- Electric Dashboard Card -->
+    <div class="col">
+      <a
+        href="https://lookerstudio.google.com/reporting/6ad8a545-b441-4d89-915f-47d6937f97e2"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="text-decoration: none"
+      >
+        <div class="animated-card h-100">
+          <div class="card-content">
+            <i class="bi bi-ev-station-fill card-icon icon-1"></i>
+            <h5 class="card-title">Electric Dashboard</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Electric Form Card -->
+    <div class="col">
+      <a
+        href="#"
+        onclick="event.preventDefault(); alert('Electric Form coming soon');"
+        style="text-decoration: none"
+      >
+        <div class="animated-card h-100">
+          <div class="card-content">
+            <i class="bi bi-clipboard-data-fill card-icon icon-2"></i>
+            <h5 class="card-title">Electric Form</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
 
       <!-- Help Desk Sub-Menu Page -->
       <div id="help-desk-page" class="content">
